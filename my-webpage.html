@@ -14,27 +14,69 @@
         }
 
         .header{   
-            padding: 3em;
+            padding: 2em;
             background-color: lime;
         }
-        
+
         @media(min-width:800px){
         .header {
             padding: 2em;
             background-color: salmon;
-
+            font-size: x-large;
         }
         }
 
         .h1 {
-            padding: 2em;
+            padding: 1em;
             text-align: center;
+        }
+
+        @media(min-width:800px){
+        .h1 {
+            padding: 1em;
+            width: 50%;
+            text-align: center;
+            margin-top: 2em;
+        }
+        }
+
+        .img1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media(min-width:800px){
+            .img1 {
+                float: right;
+                width: 50%;
+            }
+        }
+
+        .img2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media(min-width:800px){
+        .img2 {
+            float: left;
+            margin-bottom: 1em;
+            margin-right: 1em;
+        }
         }
 
         @media(min-width:800px){
         .img {
             float: right;
         }
+        }
+
+
+
+        .content {
+            font-size: medium;
         }
 
         .clearfix {
@@ -45,10 +87,22 @@
 
     <div class="container">  
         <div class="header clearfix">
-            <h1 class="h1">Jaden Hope <img class="img" src="Table-Mnt.jpg"></h1>
-
+            <img class="img1" src="Table-Mnt.jpg">
+            <h1 class="h1">Jaden Hope</h1>           
         </div>
         <div class="content">
+            <h2>Which city?</h2>
+            <br>
+            <img class="img2" src="Berlin.jpg">
+            <h3 class="content" >
+                My name is jaden but you know that from the bit above this text, 
+                this is just me testing if this works and also i'm not entirely sure 
+                how i'm gonna format this but that's also what this is for, I want
+                 a nice big block of text that I can use in order to test the formatting
+                 i'm going to apply to this "content" block, anyway I reckon this'll be
+                 enough stuff for now and if it isn't i'll just copy and paste this 
+                 bit again to add more length.
+            </h3>
         </div>
 
 
