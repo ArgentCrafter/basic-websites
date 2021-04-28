@@ -14,26 +14,26 @@
         }
 
         .header{   
-            padding: 2em;
-            background-color: lime;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media(min-width:800px){
         .header {
-            padding: 2em;
-            background-color: salmon;
             font-size: x-large;
+            display: flex;
+            justify-content: space-between;
         }
         }
 
         .h1 {
-            padding: 0em;
             text-align: center;
         }
 
         @media(min-width:800px){
-        .h1 {
-            margin-top: 2em;
+            .h1 {
+            margin-top: 3em;
         }
         }
 
@@ -46,7 +46,8 @@
         @media(min-width:800px){
             .img1 {
                 float: right;
-                width: 50%;
+                width: 150%;
+                margin-right: 100px;
             }
         }
 
@@ -78,11 +79,27 @@
             overflow: auto;
         }
 
+        .name {
+            width: 100%;
+        }
+
+        @media(min-width:800px){
+        .name {
+            width: 50%;
+        }
+
+        }
+
     </style>
 
     <div class="container">  
         <div class="header clearfix"> 
-            <h1 class="h1">Jaden Hope <img class="img1" src="Table-Mnt.jpg"></h1>       
+            <div class="name">
+                <h1 class="h1">Jaden Hope</h1>   
+            </div>
+            <div>
+            <img class="img1" src="Table-Mnt.jpg">
+            </div>
         </div>
         <div class="content">
             <h2>Which city?</h2>
