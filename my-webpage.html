@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
 </head>
+
 <body>
     <style>
-
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .header{   
+        .header {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
 
-        @media(min-width:800px){
-        .header {
-            font-size: x-large;
-            display: flex;
-            justify-content: space-between;
-        }
+        @media(min-width:800px) {
+            .header {
+                font-size: x-large;
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
         .h1 {
             text-align: center;
         }
 
-        @media(min-width:800px){
+        @media(min-width:800px) {
             .h1 {
-            margin-top: 3em;
-        }
+                margin-top: 3em;
+            }
         }
 
         .img1 {
@@ -43,7 +44,7 @@
             margin-right: auto;
         }
 
-        @media(min-width:800px){
+        @media(min-width:800px) {
             .img1 {
                 float: right;
                 width: 150%;
@@ -57,18 +58,18 @@
             margin-right: auto;
         }
 
-        @media(min-width:800px){
-        .img2 {
-            float: left;
-            margin-bottom: 1em;
-            margin-right: 1em;
-        }
+        @media(min-width:800px) {
+            .img2 {
+                float: left;
+                margin-bottom: 1em;
+                margin-right: 1em;
+            }
         }
 
-        @media(min-width:800px){
-        .img {
-            float: right;
-        }
+        @media(min-width:800px) {
+            .img {
+                float: right;
+            }
         }
 
         .content {
@@ -83,46 +84,153 @@
             width: 100%;
         }
 
+        @media(min-width:800px) {
+            .name {
+                width: 50%;
+            }
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 90%;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        .historic {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         @media(min-width:800px){
-        .name {
-            width: 50%;
+            .historic{
+                flex-direction: row;
+            }
         }
 
+        .His1 {
+            background-color: blue;
         }
 
+        @media(min-width:800px){
+            .His1 {
+                width: 30%;
+            }
+        }
+
+        .His2 {
+            background-color: blueviolet;
+        }
+
+        @media(min-width:800px){
+            .His2 {
+                width: 30%;
+            }
+        }
+
+        .His3 {
+            background-color: coral;
+        }
+
+        @media(min-width:800px){
+            .His3 {
+                width: 30%;
+            }
+        }
+
+        .hisImages {
+            float: right;
+        }
     </style>
 
-    <div class="container">  
-        <div class="header clearfix"> 
+    <div class="container">
+        <div class="header clearfix">
             <div class="name">
-                <h1 class="h1">Jaden Hope</h1>   
+                <h1 class="h1">Jaden Hope</h1>
             </div>
             <div>
-            <img class="img1" src="Table-Mnt.jpg">
+                <img class="img1" src="Table-Mnt.jpg">
             </div>
         </div>
-        <div class="content">
+        <div class="content clearfix">
             <h2>Which city?</h2>
             <br>
             <img class="img2" src="Berlin.jpg">
-            <p class="content" >
-                My name is jaden but you know that from the bit above this text, 
-                this is just me testing if this works and also i'm not entirely sure 
+            <p>
+                My name is jaden but you know that from the bit above this text,
+                this is just me testing if this works and also i'm not entirely sure
                 how i'm gonna format this but that's also what this is for, I want
-                 a nice big block of text that I can use in order to test the formatting
-                 i'm going to apply to this "content" block, anyway I reckon this'll be
-                 enough stuff for now and if it isn't i'll just copy and paste this 
-                 bit again to add more length.My name is jaden but you know that from the bit above this text, 
-                 this is just me testing if this works and also i'm not entirely sure 
-                 how i'm gonna format this but that's also what this is for, I want
-                  a nice big block of text that I can use in order to test the formatting
-                  i'm going to apply to this "content" block, anyway I reckon this'll be
-                  enough stuff for now and if it isn't i'll just copy and paste this 
-                  bit again to add more length.
+                a nice big block of text that I can use in order to test the formatting
+                i'm going to apply to this "content" block, anyway I reckon this'll be
+                enough stuff for now and if it isn't i'll just copy and paste this
+                bit again to add more length.My name is jaden but you know that from the bit above this text,
+                this is just me testing if this works and also i'm not entirely sure
+                how i'm gonna format this but that's also what this is for, I want
+                a nice big block of text that I can use in order to test the formatting
+                i'm going to apply to this "content" block, anyway I reckon this'll be
+                enough stuff for now and if it isn't i'll just copy and paste this
+                bit again to add more length.
             </p>
         </div>
+        <hr>
+        <div class="content">
+            <h2>Forein language</h2>
+            <p>
+                My name is jaden but you know that from the bit above this text,
+                this is just me testing if this works and also i'm not entirely sure
+                how i'm gonna format this but that's also what this is for, I want
+                a nice big block of text that I can use in order to test the formatting
+                i'm going to apply to this "content" block, anyway I reckon this'll be
+                enough stuff for now and if it isn't i'll just copy and paste this
+                bit again to add more length.
+            </p>
 
+            <table>
+                <tr>
+                    <th>English Phrase</th>
+                    <th>German Phrase</th>
+                </tr>
+                <tr>
+                    <td>Nice to meet you</td>
+                    <td>Nett, Sie kennen zu lernen</td>
+                </tr>
+                <tr>
+                    <td>How are you?</td>
+                    <td>Wie geht es dir</td>
+                </tr>
+                <tr>
+                    <td>What's your name?</td>
+                    <td>Wie heißt du?</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <hr>
+        <div class="historic content">
+            <h2>Historic places</h2>
+            <br>
+            <div class="His1 clearfix">
+                <h3 style="margin-left: 20px;">District 6 Museum</h3>
+                <img class="hisImages" src="Dis6Museum.jpg" style="margin: 20px 20px 20px 20px;">
 
+            </div>
+            <div class="His2 clearfix">
+                <h3 style="margin-left: 20px;">Castle of Good Hope</h3>
+                <img src="CastleGoodHope.jpg" style=" margin: 20px 20px 20px 20px">
+            </div>
+            <div class="His3 clearfix">
+                <h3 style="margin-left: 20px;">Parliament of RSA</h3>
+                <img class="hisImages" src="RSAParliament.jpg" style="margin: 20px 20px 20px 20px">
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
