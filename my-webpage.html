@@ -20,22 +20,8 @@
             margin-right: auto;
         }
 
-        @media(min-width:800px) {
-            .header {
-                font-size: x-large;
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-
         .h1 {
             text-align: center;
-        }
-
-        @media(min-width:800px) {
-            .h1 {
-                margin-top: 3em;
-            }
         }
 
         .img1 {
@@ -44,32 +30,10 @@
             margin-right: auto;
         }
 
-        @media(min-width:800px) {
-            .img1 {
-                float: right;
-                width: 150%;
-                margin-right: 100px;
-            }
-        }
-
         .img2 {
             display: block;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        @media(min-width:800px) {
-            .img2 {
-                float: left;
-                margin-bottom: 1em;
-                margin-right: 1em;
-            }
-        }
-
-        @media(min-width:800px) {
-            .img {
-                float: right;
-            }
         }
 
         .content {
@@ -82,12 +46,6 @@
 
         .name {
             width: 100%;
-        }
-
-        @media(min-width:800px) {
-            .name {
-                width: 50%;
-            }
         }
 
         table,
@@ -106,64 +64,88 @@
         .historic {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-        }
-
-        @media(min-width:800px){
-            .historic{
-                flex-direction: row;
-            }
-        }
-
-        .His1 {
-            background-color: blue;
-        }
-
-        @media(min-width:800px){
-            .His1 {
-                width: 30%;
-            }
-        }
-
-        .His2 {
-            background-color: blueviolet;
-        }
-
-        @media(min-width:800px){
-            .His2 {
-                width: 30%;
-            }
-        }
-
-        .His3 {
-            background-color: coral;
-        }
-
-        @media(min-width:800px){
-            .His3 {
-                width: 30%;
-            }
         }
 
         .hisImages {
             float: right;
         }
+
+        .img2nd {
+            float: left;
+        }
+
+        .hisDisplay {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .hisDisplay2 {
+            display: flex;
+        }
+
+        @media(min-width:800px) {
+            .header {
+                font-size: x-large;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .h1 {
+                margin-top: 3em;
+            }
+
+            .img1 {
+                float: right;
+                width: 150%;
+                margin-right: 100px;
+            }
+
+            .img2 {
+                float: left;
+                margin-bottom: 1em;
+                margin-right: 1em;
+            }
+
+            .img {
+                float: right;
+            }
+
+            .name {
+                width: 50%;
+            }
+
+            .His {
+                width: 33.33%;
+            }
+
+            .maxHisImages{
+                float: right;
+            }
+
+            .historic{
+                flex-direction: row;
+            }
+        }
+
     </style>
 
     <div class="container">
-        <div class="header clearfix">
+        <div class="header clearfix" style="background-color: mediumvioletred;">
             <div class="name">
                 <h1 class="h1">Jaden Hope</h1>
             </div>
             <div>
                 <img class="img1" src="Table-Mnt.jpg">
             </div>
+        <br>
         </div>
+        <br>
+        <div style="background-color: cyan;">
         <div class="content clearfix">
-            <h2>Which city?</h2>
+            <h2 style="margin-left: 10px;">Which city?</h2>
             <br>
             <img class="img2" src="Berlin.jpg">
-            <p>
+            <p style="margin: 10px 10px 10px 10px;">
                 My name is jaden but you know that from the bit above this text,
                 this is just me testing if this works and also i'm not entirely sure
                 how i'm gonna format this but that's also what this is for, I want
@@ -179,10 +161,12 @@
                 bit again to add more length.
             </p>
         </div>
+        </div>
+        <div style="background-color: coral;">
         <hr>
         <div class="content">
-            <h2>Forein language</h2>
-            <p>
+            <h2 style="margin-left: 10px;">Foreign language</h2>
+            <p style="margin: 0 10px 0 10px;">
                 My name is jaden but you know that from the bit above this text,
                 this is just me testing if this works and also i'm not entirely sure
                 how i'm gonna format this but that's also what this is for, I want
@@ -191,7 +175,7 @@
                 enough stuff for now and if it isn't i'll just copy and paste this
                 bit again to add more length.
             </p>
-
+            <br>
             <table>
                 <tr>
                     <th>English Phrase</th>
@@ -212,24 +196,48 @@
             </table>
         </div>
         <br>
-        <hr>
-        <div class="historic content">
-            <h2>Historic places</h2>
-            <br>
-            <div class="His1 clearfix">
-                <h3 style="margin-left: 20px;">District 6 Museum</h3>
-                <img class="hisImages" src="Dis6Museum.jpg" style="margin: 20px 20px 20px 20px;">
-
-            </div>
-            <div class="His2 clearfix">
-                <h3 style="margin-left: 20px;">Castle of Good Hope</h3>
-                <img src="CastleGoodHope.jpg" style=" margin: 20px 20px 20px 20px">
-            </div>
-            <div class="His3 clearfix">
-                <h3 style="margin-left: 20px;">Parliament of RSA</h3>
-                <img class="hisImages" src="RSAParliament.jpg" style="margin: 20px 20px 20px 20px">
-            </div>
         </div>
+        <div style="background-color: blue;">
+        <hr>
+        <h2 style="margin-left: 10px;">Historic places</h2>
+        <div class="historic content">
+            <br>
+            <div class="His clearfix">
+                <h3 style="margin-left: 20px;">District 6 Museum</h3>
+                <div class="clearfix hisDisplay">
+                <img class="hisImages maxHisImages" src="Dis6Museum.jpg" style="margin: 20px 20px 20px 20px; height: 150px;">
+                <ul>
+                    <li>Founded in 1994 as a memorial to the forced relocation of 60,000 inhabitants.</li>
+                    <li>The floor is covered with a large map of the district with hand written notes of former inhabitants,
+                        indicating their old home's location.</li>
+                    <li>The museum offers programmes for current inhabitants to help develop the district.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="His clearfix">
+                <h3 style="margin-left: 20px;">Castle of Good Hope</h3>
+                <div class="clearfix">
+                <img class=" img2nd maxHisImages" src="CastleGoodHope.jpg" style="margin: 20px 20px 20px 20px">
+                <ul>
+                    <li>Built in the 17th century, originally located on the coastline of Table Bay, now located further inland.</li>
+                    <li>Declared a historical monument in 1936 and underwent restorations in the 1980's.</li>
+                    <li>Prior to 2003, the pentagonal castle was used on South African Defence Flags.</li>
+               </ul>
+               </div>
+            </div>
+            <div class="His clearfix">
+                <h3 style="margin-left: 20px;">Iziko Slave Lodge</h3>
+                <div class="clearfix hisDisplay">
+                <img class="hisImages maxHisImages" src="SlaveLodge.jpg" style="margin: 20px 20px 20px 20px; height: 150px;">
+                <ul>
+                    <li>One of the oldest buildings in Cape Town, It has been named the Governemt Offices Building, Old Supreme Court and SA Cultural History Museum before receiving it's current namein 1998.</li>
+                    <li>It offers an audio-guided tour taking you though the Slave Lodge and providing insight into living conditions during slavery.</li>
+                    <li>It received it's name, the Slave Lodge, under the theme: "From human wrongs to human rights"</li>
+                </ul>
+                </div>
+             </div>
+        </div>
+    </div>
     </div>
 </body>
 
