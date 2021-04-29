@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./simple-grid.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        .containerAll {
+            height: auto;
+            width: auto;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 90%;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        .historicPics {
+            float: right;
+            height: 150px;
+            width: 200px;
+        }
+
+        .historic {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            font-size: medium;
+        }
+
+        @media(max-width:800px){
+            .historic {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <div class="containerAll">
+        <div class="header row">
+            <div class="col-2"></div>
+            <div class="col-4 name">
+                <h1>JADEN HOPE</h1>
+            </div>
+            <div class="col-4 nameImg">
+                <img src="./Table-Mnt.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"><h2>Which City?</h2></div>
+            <div class="col-9"></div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            <img src="./Berlin.jpg" style="float: left;">
+            </div>
+            <div class="col-9">
+                <p>I want to visit Berlin, the largest city of Germany. It's the largest city by both area and population.
+                Berlin has moderate summer temperatures that can sometimes be hot and cold winter, which makes it my kind of weather.
+                Berlin has beautiful architecture and landscape with over 15 foreign languages commonly spoken. Berlin has a low unemployment 
+                rate that has been steadily decreasing for the past 15 years and it uses the mighty pound.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5"><h2>Foreign Language</h2></div>
+            <div class="col-7"></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>I wanna learn german, it's a language that can sound very threatening, which might be a silly reason but hey, 
+                and german is the main language of Berlin, which was the city that I said I wanted to visit in the section above.
+                </p>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>English Phrase</th>
+                <th>German Phrase</th>
+            </tr>
+            <tr>
+                <td>Nice to meet you</td>
+                <td>Nett, Sie kennen zu lernen</td>
+            </tr>
+            <tr>
+                <td>How are you?</td>
+                <td>Wie geht es dir</td>
+            </tr>
+            <tr>
+                <td>What's your name?</td>
+                <td>Wie heißt du?</td>
+            </tr>
+        </table>
+        <br>
+        <div class="row">
+            <div class="col-5"><h2>Historic Places</h2></div>
+            <div class="col-7"></div>
+        </div>
+        <div class="row historic">
+            <div class="col-4">
+            <img class="historicPics" src="./CastleGoodHope.jpg"> 
+            <ul>
+                <li>Founded in 1994 as a memorial to the forced relocation of 60,000 inhabitants.</li>
+                <li>The floor is covered with a large map of the district with hand written notes of former inhabitants,
+                    indicating their old home's location.</li>
+                <li>The museum offers programmes for current inhabitants to help develop the district.</li>
+            </ul>
+            </div>
+
+            <div class="col-4"> 
+            <img class="historicPics" src="./Dis6Museum.jpg"> 
+            <ul>
+                <li>Built in the 17th century, originally located on the coastline of Table Bay, now located further inland.</li>
+                <li>Declared a historical monument in 1936 and underwent restorations in the 1980's.</li>
+                <li>Prior to 2003, the pentagonal castle was used on South African Defence Flags.</li>
+           </ul>
+            </div>
+
+            <div class="col-4"> 
+            <img class="historicPics" src="./SlaveLodge.jpg">
+            <ul>
+                <li>One of the oldest buildings in Cape Town, It has been named the Governemt Offices Building, Old Supreme Court and SA Cultural History Museum before receiving it's current name in 1998.</li>
+                <li>It offers an audio-guided tour taking you though the Slave Lodge and providing insight into living conditions during slavery.</li>
+                <li>It received it's name, the Slave Lodge, under the theme: "From human wrongs to human rights"</li>
+            </ul> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
