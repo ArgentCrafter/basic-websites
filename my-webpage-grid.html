@@ -11,9 +11,20 @@
 
     <style>
 
+        .pics {
+            border: 5px solid salmon; 
+            border-radius: 50px;
+        }
+
+        .divs {
+            border: 5px solid salmon;
+            border-radius: 20px;
+        }
+
         .containerAll {
             height: auto;
             width: auto;
+            background-color: lightgray;
         }
 
         .header {
@@ -79,17 +90,17 @@
                 <h1>JADEN HOPE</h1>
             </div>
             <div class="col-4 nameImg">
-                <img src="./Table-Mnt.jpg">
+                <img class="pics" src="./Table-Mnt.jpg">
             </div>
         </div>
-        <div style="background-color: rgb(230, 230, 230);">
+        <div class="divs">
         <div class="row">
             <div class="col-3"><h2>Which City?</h2></div>
             <div class="col-9"></div>
         </div>
         <div class="row">
             <div class="col-4">
-            <img class="cityImg" src="./Berlin.jpg" style="float: left; margin: 10px 10px 10px 10px;">
+            <img class="cityImg pics" src="./Berlin.jpg" style="float: left; margin: 10px 10px 10px 10px;">
             </div>
             <div class="col-1"></div>
             <div class="col-7">
@@ -101,7 +112,8 @@
             </div>
         </div>
         </div>
-        <div style="background-color: lightgrey;">
+        <br>
+        <div class="divs">
         <div class="row">
             <div class="col-5"><h2>Foreign Language</h2></div>
             <div class="col-7"></div>
@@ -133,16 +145,17 @@
         </table>
         <br>
         </div>
-        <div style="background-color: gray;">
+        <br>
+        <div class="divs">
         <div class="row">
             <div class="col-5"><h2>Historic Places</h2></div>
             <div class="col-7"></div>
         </div>
         <div class="row historic" style="display: flex;">
-            <div class="col-4 clearfix" style="background-color: sandybrown;">
+            <div class="col-4 clearfix">
             <h3>Castle of Good Hope</h3>
             <br>
-            <img class="historicPics" src="./CastleGoodHope.jpg"> 
+            <img class="historicPics pics" src="./CastleGoodHope.jpg"> 
             <ul>
                 <li>Founded in 1994 as a memorial to the forced relocation of 60,000 inhabitants.</li>
                 <li>The floor is covered with a large map of the district with hand written notes of former inhabitants,
@@ -151,10 +164,10 @@
             </ul>
             </div>
 
-            <div class="col-4 clearfix" style="background-color: salmon;"> 
+            <div class="col-4 clearfix"> 
             <h3>District 6 Museum</h3>
             <br>
-            <img class="historicPics historic2nd" src="./Dis6Museum.jpg"> 
+            <img class="historicPics historic2nd pics" src="./Dis6Museum.jpg"> 
             <ul>
                 <li>Built in the 17th century, originally located on the coastline of Table Bay, now located further inland.</li>
                 <li>Declared a historical monument in 1936 and underwent restorations in the 1980's.</li>
@@ -162,10 +175,10 @@
            </ul>
             </div>
 
-            <div class="col-4 clearfix" style="background-color: cyan;"> 
+            <div class="col-4 clearfix"> 
             <h3>Iziko Slave Lodge</h3>
             <br>     
-            <img class="historicPics" src="./SlaveLodge.jpg">
+            <img class="historicPics pics" src="./SlaveLodge.jpg">
             <ul>
                 <li>One of the oldest buildings in Cape Town, It has been named the Governemt Offices Building, Old Supreme Court and SA Cultural History Museum before receiving it's current name in 1998.</li>
                 <li>It offers an audio-guided tour taking you though the Slave Lodge and providing insight into living conditions during slavery.</li>
@@ -174,6 +187,7 @@
             </div>
         </div>
     </div>
+    <br>
     </div>
 </body>
 </html>
