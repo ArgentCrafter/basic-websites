@@ -64,12 +64,6 @@
         .content {
             font-size: medium;
         }
-        @media(min-width:800px){
-        .cityImg {
-            height: auto;
-            width: auto;
-        }
-        }
 
         @media(max-width:720px){
             .historic {
@@ -79,6 +73,12 @@
             .historic2nd {
                 float: left;
                 margin-right: 30px;
+            }
+        }
+
+        @media(min-width:920px){
+            .cityImg {
+                float: left;
             }
         }
     </style>
@@ -95,16 +95,13 @@
         </div>
         <div class="divs">
         <div class="row">
-            <div class="col-3"><h2>Which City?</h2></div>
-            <div class="col-9"></div>
+            <div class="col-4"><h2>Which City?</h2></div>
+            <div class="col-8"></div>
         </div>
         <div class="row">
-            <div class="col-4">
-            <img class="cityImg pics" src="./Berlin.jpg" style="float: left; margin: 10px 10px 10px 10px;">
-            </div>
-            <div class="col-1"></div>
-            <div class="col-7">
-                <p>I want to visit Berlin, the largest city of Germany. It's the largest city by both area and population.
+            <div class="col-12">
+            <img class="cityImg pics" src="./Berlin.jpg" style="margin: 10px 40px 10px 10px;">
+            <p>I want to visit Berlin, the largest city of Germany. It's the largest city by both area and population.
                 Berlin has moderate summer temperatures that can sometimes be hot and cold winter, which makes it my kind of weather.
                 Berlin has beautiful architecture and landscape with over 15 foreign languages commonly spoken. Berlin has a low unemployment 
                 rate that has been steadily decreasing for the past 15 years and it uses the mighty euro.
